@@ -14,10 +14,6 @@ def read(*filenames, **kwargs):
                 buf.append(f.read())
     return sep.join(buf)
 
-# Assume spidev is required on non-windows & non-mac platforms (i.e. linux).
-#if sys.platform != 'win32' and sys.platform != 'darwin':
-#    requires.append('spidev')
-
 long_description = read('README.txt', 'CHANGES.txt')
 
 setup(
@@ -25,21 +21,22 @@ setup(
     version='0.4',
     author='Alexander Eiken',
     author_email='Alex@nder-Eiken.de',
-    description='Tools for accessing sensors connected to GPIO pins of credit card sized computers',
+    description='Tools for accessing sensors and binding devices connected to GPIO pins of credit card sized computers',
     long_description=long_description,
     license='Apache Software License',
     keywords = 'CHIP IO GPIO MQTT',
     url='',
     classifiers=[
         'Programming Language :: Python',
-        'Development Status :: 3 - Alpha',
+        'Development Status :: 4 - Beta',
         'Natural Language :: English',
         'Environment :: Console',
         'Intended Audience :: Developers',
-        'License :: OSI Approved :: Apache Software License',
-        'Operating System :: OS Independent',
+		'Intended Audience :: Information Technology',
+		'Intended Audience :: Science/Research',
+        'License :: OSI Approved :: MIT License',
+        'Operating System :: POSIX :: Linux',
         'Programming Language :: Python :: 2.7',
-        'Programming Language :: Python :: 3',
         'Topic :: Software Development',
         'Topic :: Home Automation',
         'Topic :: System :: Hardware'
@@ -62,7 +59,6 @@ setup(
                                                                'gpio_device_tools/templates/temp_pres_alt/template.xml'])],
 
     install_requires=[
-        #'python-daemon>=2.1.2',
         'paho-mqtt>=1.2',
         'Adafruit-GPIO>=1.0.1',
         'CHIP_IO>=0.2'
@@ -76,5 +72,4 @@ setup(
     },
 
     test_suite = 'tests'
-
 )
