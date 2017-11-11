@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<sensor>
+    <type>bmp085</type>
+    <id>$id</id>
+    <label>$label</label>
+    <time>$time</time>
+    <data>
+        <temperature unit="$temperatureUnit">$temperature</temperature>
+        <pressure unit="$pressureUnit">$pressure</pressure>
+        <altitude unit="$altitudeUnit">$altitude</altitude>
+    </data>
+</sensor>

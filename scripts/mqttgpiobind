@@ -1,0 +1,7 @@
+#!/usr/bin/env python
+
+import sys
+import gpio_device_tools.mqttbind
+
+if __name__ == '__main__':
+    gpio_device_tools.mqttbind.main(sys.argv)

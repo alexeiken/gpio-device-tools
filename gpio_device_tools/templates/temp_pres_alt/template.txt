@@ -1,0 +1,6 @@
+Label: $label
+Type : $type
+Time : $time
+Temperature: $temperature °$temperatureUnit
+Pressure:    $pressure $pressureUnit
+Altitude:    $altitude $altitudeUnit

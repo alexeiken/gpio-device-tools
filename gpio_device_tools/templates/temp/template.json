@@ -1,0 +1,10 @@
+{
+  "type": "$type",
+  "id": "$id",
+  "label": "$label",
+  "time": "$time",
+  "temperature": {
+    "value": "$temperature",
+    "unit": "$temperatureUnit"
+  }
+}

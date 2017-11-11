@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<sensor>
+    <type>$type</type>
+    <id>$id</id>
+    <label>$label</label>
+    <time>$time</time>
+    <temperature unit="$temperatureUnit">$temperature</temperature>
+</sensor>

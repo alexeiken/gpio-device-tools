@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<sensor>
+    <type>htu21d</type>
+    <id>$id</id>
+    <label>$label</label>
+    <time>$time</time>
+    <data>
+        <temperature unit="$temperatureUnit">$temperature</temperature>
+        <humidity unit="$humidityUnit">$humidity</humidity>
+    </data>
+</sensor>

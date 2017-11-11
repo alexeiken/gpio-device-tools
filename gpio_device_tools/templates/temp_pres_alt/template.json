@@ -1,0 +1,20 @@
+{
+  "type": "bmp085",
+  "id": "$id",
+  "label": "$label",
+  "time": "$time",
+  "data": {
+    "temperature": {
+      "value": "$temperature",
+      "unit": "$temperatureUnit"
+    },
+    "pressure": {
+      "value": "$pressure",
+      "unit": "$pressureUnit"
+    },
+    "altitude": {
+      "value": "$altitude",
+      "unit": "$altitudeUnit"
+    }
+  }
+}

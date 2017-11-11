@@ -1,0 +1,4 @@
+Label: $label
+Type : $type
+Time : $time
+Temperature: $temperature °$temperatureUnit

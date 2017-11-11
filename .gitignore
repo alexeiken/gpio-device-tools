@@ -1,0 +1,6 @@
+nb-configuration.xml
+dist/**
+gpio_device_tools.egg-info/**
+.idea/**
+.eggs/**
+
