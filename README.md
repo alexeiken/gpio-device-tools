@@ -5,7 +5,7 @@ This package provides a set of tools for accessing devices connected to the GPIO
 pins of credit card–sized single-board computers like the Raspberry Pi or C.H.I.P..
 The goal of this project is to provide hardware independent tools (as far as
 possible) for reading sensor data or controlling devices connected to the
-computers by various communication buses like 1-Wire or I2C. The tools require
+computers using different communication buses like 1-Wire or I2C. The tools require
 python 2.7 which is in general available for most of the Linux operating systems
 of such computers.
 
@@ -13,6 +13,31 @@ The Arduino platform is not supported.
 
 # Installation
 
+Install python and other required python libraries. On my Raspberry Pi 2 and C.H.I.P.
+I had to execute the following commands.
+
+````
+
+sudo apt-get update
+sudo apt-get install python python-setuptools python-pip python-dev python-smbus
+
+````
+
+Get the code.
+
+````
+
+git clone https://github.com/alexeiken/gpio-device-tools.git
+
+````
+
+Install the tools using setup.py.
+
+````
+
+sudo python setup.py install
+
+````
 
 # Tools
 
